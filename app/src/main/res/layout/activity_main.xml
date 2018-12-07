@@ -40,5 +40,4 @@
             android:layout_margin="@dimen/fab_margin"
             android:src="@drawable/ic_reorder_black_24dp" />
 
-
 </android.support.design.widget.CoordinatorLayout>

@@ -9,13 +9,11 @@
         android:layout_height="match_parent"
         tools:context="com.example.a16719756.myapplication.ScrollingActivity">
 
-
     <android.support.v7.widget.RecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:drawable/alert_dark_frame"
             tools:listitem="@layout/recyclerview_item" />
-
 
 </android.support.v4.widget.NestedScrollView>

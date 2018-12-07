@@ -32,7 +32,6 @@ public class NoteRepository {
     private static class insertAsyncTask extends AsyncTask<Note, Void, Void> {
 
         private NotebookDao mAsyncTaskDao;
-
         insertAsyncTask(NotebookDao dao) {
             mAsyncTaskDao = dao;
         }

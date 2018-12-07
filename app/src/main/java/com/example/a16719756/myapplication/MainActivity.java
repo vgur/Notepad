@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, NewNoteActivity.class);
-                startActivityForResult(intent,  NEW_NOTE_ACTIVITY_REQUEST_CODE);
+                startActivityForResult(intent, NEW_NOTE_ACTIVITY_REQUEST_CODE);
             }
         });
 
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
@@ -53,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
             Note note = new Note();
             note.setTitle(data.getStringExtra("title"));
             note.setContent(data.getStringExtra("content"));
-            String uid =  data.getStringExtra("uid");
-            note.setId(new Integer( uid ));
+            String uid = data.getStringExtra("uid");
+            note.setId(new Integer(uid));
             noteViewModel.insert(note);
         } else {
             Toast.makeText(
