@@ -36,14 +36,14 @@ public class NewNoteActivity extends AppCompatActivity {
                 Intent replyIntent = new Intent();
                 replyIntent.putExtra("uid", id.getText().toString());
                 if (TextUtils.isEmpty(title.getText())) {
-                    replyIntent.putExtra("title","Hello");
+                    replyIntent.putExtra("title", "Hello");
                 } else {
-                    replyIntent.putExtra("title",title.getText().toString());
+                    replyIntent.putExtra("title", title.getText().toString());
                 }
                 if (TextUtils.isEmpty(content.getText())) {
-                    replyIntent.putExtra("content","Vasia");
+                    replyIntent.putExtra("content", "Vasia");
                 } else {
-                    replyIntent.putExtra("content",content.getText().toString());
+                    replyIntent.putExtra("content", content.getText().toString());
                 }
                 setResult(RESULT_OK, replyIntent);
                 finish();

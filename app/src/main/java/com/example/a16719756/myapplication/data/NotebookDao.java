@@ -20,5 +20,4 @@ public interface NotebookDao {
 
     @Query("DELETE FROM Notebook")
     void deleteAll();
-
 }

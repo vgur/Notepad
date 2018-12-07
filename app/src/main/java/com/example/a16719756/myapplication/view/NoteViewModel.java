@@ -11,7 +11,6 @@ import java.util.List;
 /*
     ViewModel предоставляет данные для UI.
  */
-
 public class NoteViewModel extends AndroidViewModel {
     private NoteRepository noteRepository;
     private LiveData<List<Note>> notesList;

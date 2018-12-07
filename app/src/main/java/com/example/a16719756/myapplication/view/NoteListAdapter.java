@@ -29,7 +29,7 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
     }
 
     private final LayoutInflater mInflater;
-    private List<Note> notesList = Collections.emptyList(); // Cached copy of words
+    private List<Note> notesList = Collections.emptyList();
 
     public NoteListAdapter(Context context) {
         mInflater = LayoutInflater.from(context);
